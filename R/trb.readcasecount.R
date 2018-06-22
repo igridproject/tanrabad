@@ -14,6 +14,7 @@
 
 trb.readcasecount <- function(txt) {
   if(!jsonlite::validate(txt)) stop("txt is not json format")
+  df <-
   txt %>%
     as.tbl_json %>%
     enter_object("data") %>%
@@ -35,4 +36,7 @@ trb.readcasecount <- function(txt) {
       year = jnumber("year"),
       case_count = jnumber("case_count")
     )
+  df$array.index <- NULL
+  df$array.index <- document.id
+  return(df)
 }
