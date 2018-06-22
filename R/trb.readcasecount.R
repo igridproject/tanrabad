@@ -37,6 +37,6 @@ trb.readcasecount <- function(txt) {
       case_count = jnumber("case_count")
     )
   df$array.index <- NULL
-  df$array.index <- document.id
+  df$document.id <- NULL
   return(df)
 }
