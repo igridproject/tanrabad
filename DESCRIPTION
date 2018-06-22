@@ -1,0 +1,15 @@
+Package: tanrabad
+Type: Package
+Title: Tanrabad json to data frame converter
+Imports:
+  jsonlite,
+  tidyjson,
+  dplyr
+Version: 1.0.0
+Author: Krit Punpreuk
+Maintainer: Krit Punpreuk <krit.punpreuk@nectec.or.th>
+Description: function for convert tanrabad casecount to dataframe
+Encoding: UTF-8
+LazyData: true
+License:
+RoxygenNote: 6.0.1
